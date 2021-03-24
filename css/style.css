@@ -1,0 +1,41 @@
+body {
+  font: 15px/1.5 "Reggae One", Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #e7e7e9;
+}
+/* Global*/
+.container {
+  width: 70%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.button_1 {
+  height: 20px;
+  background: #e8de09;
+  border: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: bold;
+}
+/*Newsletter*/
+#newsletter {
+  padding: 15px;
+  color: #ffffff;
+  background: #0b4d76;
+}
+
+#newsletter h1 {
+  float: left;
+}
+
+#newsletter form {
+  float: right;
+  margin-top: 15px;
+}
+
+#newsletter input[type="number"] {
+  height: 20px;
+  width: 200px;
+}
