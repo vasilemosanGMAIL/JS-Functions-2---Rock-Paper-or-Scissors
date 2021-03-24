@@ -28,31 +28,31 @@ const getComputerChoice = () => {
 
 const determineWinner = (userChoice, computerChoice) => {
   if (userChoice === computerChoice) {
-    console.log("Game was a tie");
+    return console.log("Game was a tie");
     // validation if user chose rock
   } else if (userChoice === "rock") {
-    if (computerChoice === "paper") console.log("Computer won.");
+    if (computerChoice === "paper") return console.log("Computer won.");
     else if (computerChoice === "scissors") {
-      console.log("User won.");
+      return console.log("User won.");
     }
   } // validation if user chose paper
   else if (userChoice === "paper") {
-    if (computerChoice === "scissors") console.log("Computer won.");
+    if (computerChoice === "scissors") return console.log("Computer won.");
     else if (computerChoice === "rock") {
-      console.log("User won.");
+      return console.log("User won.");
     }
   } // validation if user chose scissors
   else if (userChoice === "scissors") {
-    if (computerChoice === "rock") console.log("Computer won.");
+    if (computerChoice === "rock") return console.log("Computer won.");
     else if (computerChoice === "paper") {
-      console.log("User won.");
+      return console.log("User won.");
     }
   }
 };
 
 const playGame = () => {
-  let userChoice = getUserChoice("scissors");
-  console.log(`This is the User choice: ${userChoice}`);
+  let userChoice = getUserChoice("rock");
+  console.log(`This is the user choice: ${userChoice}`);
   let computerChoice = getComputerChoice();
   console.log(`This is the computer choice: ${computerChoice}`);
   determineWinner(userChoice, computerChoice);
